@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://2pkv5vd0n1ar"]
+[gd_scene load_steps=6 format=3 uid="uid://2pkv5vd0n1ar"]
 
+[ext_resource type="Texture2D" uid="uid://b5ffe0aoqf66y" path="res://Art/Legacy-Fantasy - High Forest 2.3/Background/Background.png" id="1_f3hab"]
 [ext_resource type="Texture2D" uid="uid://bk8rub6c08hao" path="res://Art/Legacy-Fantasy - High Forest 2.3/Assets/Tiles.png" id="1_kl1ic"]
 [ext_resource type="PackedScene" uid="uid://ckajg5py8ssjp" path="res://Character/player.tscn" id="2_hhjmc"]
 
@@ -1423,6 +1424,17 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_kymvf")
 
 [node name="TestLevel" type="Node2D"]
+metadata/_edit_horizontal_guides_ = []
+metadata/_edit_vertical_guides_ = [-276.0]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_repeat = 2
+offset_left = -621.0
+offset_top = -74.0
+offset_right = 745.0
+offset_bottom = 198.0
+texture = ExtResource("1_f3hab")
+stretch_mode = 1
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_e3ljb")
@@ -1440,6 +1452,13 @@ remote_path = NodePath("../../Camera2D")
 position = Vector2(0, 56)
 zoom = Vector2(4, 4)
 process_callback = 0
+limit_left = -400
+limit_top = -50
+limit_right = 400
+limit_bottom = 190
+limit_smoothed = true
 position_smoothing_enabled = true
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
+editor_draw_limits = true
+editor_draw_drag_margin = true
