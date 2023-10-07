@@ -15,3 +15,5 @@
 ### State Machine Setup
 
 - [State Machine Setup for 2D Platformer Character ~ Godot 4 GameDev Tutorial](https://youtu.be/fuGiJdMrCAk)
+
+- Resume From <https://youtu.be/NVAXjTzqTyE?list=PLyH-qXFkNSxl0Sg2MUPCz9RPzQOSsNFK5&t=586>
